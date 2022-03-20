@@ -1,0 +1,14 @@
+CREATE DATABASE mall
+
+CREATE TABLE public.product (
+	product_id serial4 NOT NULL,
+	product_name varchar NOT NULL,
+	category varchar NOT NULL,
+	image_url varchar NOT NULL,
+	price int4 NOT NULL,
+	stock int4 NOT NULL,
+	description varchar NULL,
+	created_date timestamp NOT NULL,
+	last_modified_date timestamp NULL,
+	CONSTRAINT product_pkey PRIMARY KEY (product_id)
+);
